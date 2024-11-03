@@ -1,0 +1,16 @@
+INSERT INTO USER_TYPE (TYPE_ID, TYPE_DESC) VALUES (1, 'Guest');
+INSERT INTO USER_TYPE (TYPE_ID, TYPE_DESC) VALUES (2, 'Admin');
+------------------------------------------------------
+INSERT INTO TASK_STATUS (STATUS_ID, STATUS_DESC) 
+VALUES 
+    (1, 'TO_DO'), 
+    (2, 'IN_PROGRESS'), 
+    (3, 'DONE'), 
+    (4, 'DELETED');
+------------------------------------------------------
+INSERT INTO TASK_PRIORITY (PRIORITY_ID, PRIORITY_DESC) 
+VALUES 
+    (1, 'LOW'), 
+    (2, 'MEDIUM'), 
+    (3, 'HIGH');
+
