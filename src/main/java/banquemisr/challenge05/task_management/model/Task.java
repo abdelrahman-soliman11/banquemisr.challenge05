@@ -1,12 +1,19 @@
 package banquemisr.challenge05.task_management.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 @Data
 @Entity
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "TASK")
 public class Task {
 
@@ -28,6 +35,5 @@ public class Task {
     private Integer priority;
 
     @Column(name = "DUE_DATE")
-    @Temporal(TemporalType.DATE)
-    private Date dueDate;
+    private LocalDate dueDate;
 }

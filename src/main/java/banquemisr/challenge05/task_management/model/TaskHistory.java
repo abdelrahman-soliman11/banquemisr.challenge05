@@ -3,6 +3,7 @@ package banquemisr.challenge05.task_management.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 @Data
@@ -22,8 +23,7 @@ public class TaskHistory {
     private Integer preStatus;
 
     @Column(name = "LAST_UPDATE_DATE", nullable = false)
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date lastUpdateDate;
+    private LocalDate lastUpdateDate;
 
     @Column(name = "LAST_UPDATE_USER", nullable = false, length = 100)
     private String lastUpdateUser;
